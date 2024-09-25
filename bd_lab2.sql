@@ -24,7 +24,8 @@ VALUES ('China', 3, 1390000000),
 ALTER TABLE countries ALTER COLUMN country_name SET DEFAULT 'Kazakhstan';
 
 INSERT INTO countries (country_name, region_id, population)
-VALUES (DEFAULT, DEFAULT, DEFAULT);  
+VALUES (DEFAULT, DEFAULT, DEFAULT); 
+
 CREATE TABLE countries_new LIKE countries;
 
 INSERT INTO countries_new SELECT * FROM countries;
